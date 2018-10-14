@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+nav {
+    position: absolute;
+    z-index: 999;
+}
+
+.landing-text {
+    
+}
+
+.landing {
+    padding-top: 100px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+#section1 {
+    background-image: url("../assets/landingbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.landing .test:active {
+    
+}
