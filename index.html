@@ -1,46 +1,132 @@
   <!DOCTYPE html>
   <html>
       <head>
+          <title>AV1874</title>
           <!--Import Google Icon Font-->
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
           
           <!--Import materialize.css-->
           <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
           
+          <!-- Import main style sheet -->
           <link type="text/css" rel="stylesheet" href="css/indexcss.css"/>
+          
+          <!-- Import animation style sheets -->
+          <link type="text/css" rel="stylesheet" href="css/hover-min.css"/>
+          <link type="text/css" rel="stylesheet" href="css/aos.css"/>
+          
+          
+          
+          <!-- Import Google Fonts -->
+          <link href="https://fonts.googleapis.com/css?family=Inconsolata|Satisfy" rel="stylesheet">
           
           <!--Let browser know website is optimized for mobile-->
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </head>
       
-      <body>
+      <body id="grayscale">
+          
+          <div id="modal1" class="modal">
+              <div class="modal-content">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col l12 m12 s12">
+                              <h1 class="logintitle">Login</h1>
+                          </div>
+                      </div>
+                      
+                      <div class="row">
+                          <form class="col s12">
+                              <div class="row">
+                                  <div class="input-field col s12">
+                                      <input placeholder="Username" id="username" type="text" class="validate">
+                                      <label for="username">Username</label>
+                                  </div>
+                                  <div class="input-field col s12">
+                                      <input placeholder="Password" id="password" type="password" class="validate">
+                                      <label for="password">Password</label>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+                <div class="row">
+                  <div class="col l12 m12 s12">
+                      <center>
+                          <div class="row">
+                              <div class="col l12 m12 s12">
+                                  <a href="#" class="forgot-password">Forgot Password?</a>
+                              </div>
+                          </div> 
+                          <a href="#" class="loginbutton z-depth-0 hvr-pop btn-large">Login</a>
+                          <a href="#" class="registerbutton z-depth-0 hvr-pop btn-large">Register</a>
+                      </center>
+                  </div>
+                </div>
+          </div>
+          
+          <!-- Navbar -->
           
           <nav class="transparent z-depth-0">
               <div class="nav-wrapper">
                   <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                  <ul class="left hide-on-med-and-down">
-                      <li><a href="#">News</a></li>
-                      <li><a href="#">Store</a></li>
-                      <li><a href="#">Quiz</a></li>
-                      <li><a href="#">Login</a></li>
+                  <ul class="center hide-on-med-and-down">
+                      <li><a href="#section2">About</a></li>
+                      <li><a href="#section3">News</a></li>
+                      <li><a href="#section4">Store</a></li>
+                      <li><a href="#section5">Quiz</a></li>
+                      <li><a data-position="bottom" data-tooltip="Login/Register Here!" data-target="modal1" class="modal-trigger tooltipped" href="#">Login</a></li>
+                      <li>
+                          <!-- Switch -->
+                          <div class="switch">
+                              <label>
+                                  Off
+                                  <input onclick="grayscale()" type="checkbox">
+                                  <span class="lever"></span>
+                                  On
+                              </label>
+                          </div></li>
                   </ul>
               </div>
           
           
           <ul class="sidenav" id="mobile-demo">
-              <li><a href="#">News</a></li>
-              <li><a href="#">Store</a></li>
-              <li><a href="#">Quiz</a></li>
-              <li><a href="#">Login</a></li>
+              <li><a href="#section2">About</a></li>
+              <li><a href="#section3">News</a></li>
+              <li><a href="#section4">Store</a></li>
+              <li><a href="#section5">Quiz</a></li>
+              <li><a data-target="modal1" class="modal-trigger" href="#">Login</a></li>
+              <li>
+                          <!-- Switch -->
+                          <div class="switch">
+                              <label>
+                                  Off
+                                  <input onclick="grayscale()" type="checkbox">
+                                  <span class="lever"></span>
+                                  On
+                              </label>
+                          </div></li>
           </ul>
               
         </nav>
           
           
           <div class="landing" id="section1">
+              <div data-aos="fade-down" class="row">
+                  <div class="col l12 m12 s12">
+                      <h1 class="title">Aston Villa 1874</h1>
+                  </div>
+                  <div class="col l12 m12 s12">
+                    <a href="#section2" id="arrow"><i class="medium material-icons icon-black hvr-hang">keyboard_arrow_down</i></a>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="about" id="section2">
               <div class="row">
                   <div class="col l12 m12 s12">
-                      <a class="btn test" onclick="greyscale">Click</a>
+                      <h1 class="abouttitle">Pride, Passion, Purpose</h1>
                   </div>
               </div>
           </div>
@@ -48,17 +134,33 @@
       
           
           <!--JavaScript at end of body for optimized loading-->
+          <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
           <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+          
           
           <script>
                $(document).ready(function(){
                    $('.sidenav').sidenav();
                });
+              
+              $(document).ready(function(){
+                  $('.modal').modal();
+              });
+              
+              $(document).ready(function(){
+                  $('.tooltipped').tooltip();
+              });
           </script>
           
           <script>
-              function greyscale() {
-                  document.getElementById("section1").;
+              AOS.init();
+          </script>
+          
+          <script>
+              function grayscale() {
+                  var element = document.getElementById("grayscale");
+                  element.classList.toggle("grayscale");
               }
           </script>
           
