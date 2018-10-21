@@ -73,7 +73,7 @@ nav > .nav-wrapper > ul > li > a {
 
 .landing {
     padding-top: 100px;
-    height: 100%;
+    min-height: 100%;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -103,11 +103,13 @@ nav > .nav-wrapper > ul > li > a {
     bottom: 50px;
     text-decoration: none;
     color: #fff;
-    left: 45%;
+    left: 50%;
+    
 }
 
 .about {
-    height: 100%;
+    margin-top: -30px;
+    min-height: 100%;
     position: relative;
     z-index: 2;
 }
@@ -123,13 +125,80 @@ nav > .nav-wrapper > ul > li > a {
     font-size: 120px;
     text-align: center;
     color: white;
-    text-shadow: 5px 5px #832b37, 7px 7px #2cb2ff;
+    text-shadow: 4px 2px gold, 5px 4px #2cb2ff;
 }
 
+.quote {
+    border-left: 5px solid skyblue;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+    color: white;
+}
 
-.placeholder {
+.cupnumber {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px gold, 4px 2px #2cb2ff;
+    font-size: 100px;
+    font-family: 'Satisfy', cursive;
     margin: 0px;
 }
+
+.cupname {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+}
+
+#section3 {
+    background-color: #2cb2ff;
+    position: relative;
+    display: block;
+}
+
+.news {
+    margin-top: -30px;
+    min-height: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.newstitle {
+    margin-top: 100px;
+    font-family: 'Satisfy', cursive;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    text-shadow: 4px 2px gold, 5px 6px #832b37;
+    z-index: 100;
+    margin-bottom: 0px;
+}
+
+.news-tagline {
+    text-align: center;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    margin: 0px;
+}
+
+.divider {
+    color: #832b37;
+}
+
+.latestnews-title, .hotnews-title {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 300;
+    color: white;
+}
+
+.card-title, .card-content {
+    font-family: 'Inconsolata', monospace;
+}
+
+
+
 
 /* Media Tags */
 
