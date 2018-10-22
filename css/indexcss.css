@@ -156,6 +156,7 @@ nav > .nav-wrapper > ul > li > a {
     background-color: #2cb2ff;
     position: relative;
     display: block;
+    padding-bottom: 50px;
 }
 
 .news {
@@ -193,12 +194,85 @@ nav > .nav-wrapper > ul > li > a {
     color: white;
 }
 
+
 .card-title, .card-content {
     font-family: 'Inconsolata', monospace;
 }
 
+#section4 {
+    background-color: #832b37;
+    position: relative;
+}
+
+.quiz {
+    margin-top: -30px;
+    min-height: 40%;
+    z-index: 2;
+}
+
+.quiztitle {
+    text-align: center;
+    color: white;
+    font-family: 'Satisfy', cursive;
+    font-size: 120px;
+    margin-top: 50px;
+    text-shadow: 4px 2px gold, 5px 6px #2cb2ff;
+}
+
+.quiz-tagline {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+}
+
+.quizcol {
+    text-align: center;
+}
+
+.quizbutton {
+    background-color: #2cb2ff;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.quizbutton:hover {
+    background-color: #2cb2ff;
+}
+
+.page-footer {
+    border-top: 5px solid #2cb2ff;
+    margin-top: -20px;
+    background-color: #832b37;
+}
 
 
+.footertitle {
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 1px 1px gold;
+}
+
+.footercontent {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+
+.footer-copyright {
+    font-family: 'Inconsolata', monospace;
+}
+
+.fa {
+    text-decoration: none;
+    color: white;
+}
+
+.fa:hover {
+    color: grey;
+}
 
 /* Media Tags */
 
