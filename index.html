@@ -71,7 +71,7 @@
 
           <!-- Navbar -->
           <div class="navbar-fixed">
-              <nav class="nav-center transparent z-depth-0">
+              <nav id="mynav" class="nav-center z-depth-0">
                   <div class="nav-wrapper">
                       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                       <ul class="hide-on-med-and-down">
@@ -164,9 +164,6 @@
                           <p class="cupname flow-text">English Supercup Winner</p>
                       </div>
                   </div>
-                  <div class="row">
-                      <a href="#section3" id="arrow"><i class="downarrow medium material-icons icon-black hvr-hang">keyboard_arrow_down</i></a>
-                  </div>
               </div>
           </div>
 
@@ -242,65 +239,6 @@
                           </div>
                       </div>
                   </div>
-
-
-                  <div class="row">
-                      <div class="col l12 m12 s12">
-                          <h2 class="hotnews-title right-align">Hot News</h2>
-                          <div class="divider"></div>
-                      </div>
-                  </div>
-
-
-
-                  <div class="row">
-                      <div class="col l3 m6 s12">
-                          <div class="card">
-                              <div class="card-image">
-                                  <a href="#"><img src="https://via.placeholder.com/500x500"></a>
-                                  <span class="card-title truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                              </div>
-                              <div class="card-content">
-                                  <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a diam nec velit pulvinar imperdiet sit amet eget elit. Fusce a posuere felis, ac vehicula sem. Vestibulum libero nibh, commodo id purus vel, molestie suscipit diam. Integer velit velit, facilisis vitae ex consectetur, convallis mattis mauris. Sed sodales auctor finibus. Quisque sit amet orci sed mi vehicula tempus at id eros. Morbi magna nunc, maximus quis dui at, malesuada varius sem. Duis luctus volutpat erat sed feugiat.</p><a href="#">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col l3 m6 s12">
-                          <div class="card">
-                              <div class="card-image">
-                                  <a href="#"><img src="https://via.placeholder.com/500x500"></a>
-                                  <span class="card-title truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                              </div>
-                              <div class="card-content">
-                                  <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a diam nec velit pulvinar imperdiet sit amet eget elit. Fusce a posuere felis, ac vehicula sem. Vestibulum libero nibh, commodo id purus vel, molestie suscipit diam. Integer velit velit, facilisis vitae ex consectetur, convallis mattis mauris. Sed sodales auctor finibus. Quisque sit amet orci sed mi vehicula tempus at id eros. Morbi magna nunc, maximus quis dui at, malesuada varius sem. Duis luctus volutpat erat sed feugiat.</p><a href="#">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col l3 m6 s12">
-                          <div class="card">
-                              <div class="card-image">
-                                  <a href="#"><img src="https://via.placeholder.com/500x500"></a>
-                                  <span class="card-title truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                              </div>
-                              <div class="card-content">
-                                  <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a diam nec velit pulvinar imperdiet sit amet eget elit. Fusce a posuere felis, ac vehicula sem. Vestibulum libero nibh, commodo id purus vel, molestie suscipit diam. Integer velit velit, facilisis vitae ex consectetur, convallis mattis mauris. Sed sodales auctor finibus. Quisque sit amet orci sed mi vehicula tempus at id eros. Morbi magna nunc, maximus quis dui at, malesuada varius sem. Duis luctus volutpat erat sed feugiat.</p><a href="#">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col l3 m6 s12">
-                          <div class="card">
-                              <div class="card-image">
-                                  <a href="#"><img src="https://via.placeholder.com/500x500"></a>
-                                  <span class="card-title truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                              </div>
-                              <div class="card-content">
-                                  <p class="truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a diam nec velit pulvinar imperdiet sit amet eget elit. Fusce a posuere felis, ac vehicula sem. Vestibulum libero nibh, commodo id purus vel, molestie suscipit diam. Integer velit velit, facilisis vitae ex consectetur, convallis mattis mauris. Sed sodales auctor finibus. Quisque sit amet orci sed mi vehicula tempus at id eros. Morbi magna nunc, maximus quis dui at, malesuada varius sem. Duis luctus volutpat erat sed feugiat.</p><a href="#">Read More</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-
               </div>
           </div>
 
@@ -376,6 +314,21 @@
                   var element = document.getElementById("grayscale");
                   element.classList.toggle("grayscale");
               }
+          </script>
+
+          <script>
+          var myNav = document.getElementById('mynav');
+          window.onscroll = function () {
+            "use strict";
+            if (document.body.scrollTop >= 200 ) {
+              myNav.classList.add("nav-coloured");
+              myNav.classList.remove("nav-transparent");
+            }
+            else {
+              myNav.classList.add("nav-transparent");
+              myNav.classList.remove("nav-coloured");
+            }
+          };
           </script>
 
           <script>
