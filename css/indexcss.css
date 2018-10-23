@@ -82,7 +82,7 @@ nav > .nav-wrapper > ul > li > a {
 }
 
 #section1 {
-    background-image: url("../assets/landingbg.jpg");
+    background-image: url("../assets/landingbg.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,7 +104,7 @@ nav > .nav-wrapper > ul > li > a {
     text-decoration: none;
     color: #fff;
     left: 50%;
-    
+
 }
 
 .about {
@@ -281,10 +281,15 @@ nav > .nav-wrapper > ul > li > a {
         font-size: 75px;
         margin-top: 190px;
     }
-    
+
     .downarrow {
         margin-right: 10px;
     }
-    
-    
+
+@media all and (width: 992px) {
+    .title {
+      margin-top: 150px;
+    }
+}
+
 }
