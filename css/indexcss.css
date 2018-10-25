@@ -60,9 +60,17 @@ nav.scrolled {
 }
 
 nav > .nav-wrapper > ul > li > a {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-weight: bolder;
+    font-style: normal;
+    line-height: 1.1em;
+    text-transform: uppercase;
+}
+
+nav > .nav-wrapper > ul > li > a:hover {
+    opacity: 0.5;
+    transition: all 200ms ease;
 }
 
 nav.nav-center ul {
@@ -269,3 +277,5 @@ nav.nav-center ul li a {
     display: block;
     margin: auto;
 }
+
+
