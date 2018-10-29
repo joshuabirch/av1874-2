@@ -317,6 +317,7 @@ nav.nav-center ul li a {
     margin: 0px;
     padding: 0px;
     margin-top: 0px;
+    position: relative;
 }
 
 .newstitle {
@@ -384,6 +385,162 @@ nav.nav-center ul li a {
     color: #fff;
 }
 
+.news-wrap .quiz-wrap {
+    background-color: #832b37;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    text-align: center;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 300px;
 }
+
+
+.news-wrap .quiz-wrap  .quiztitle h1 {
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    line-height: 1.1em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 0px;
+}
+
+.news-wrap .quiz-wrap .quiztitle .quiz-tagline {
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    line-height: 1.1em;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+    padding: 0px;
+}
+
+.news-wrap .quiz-wrap .quiztitle .quiz-button {
+    line-height: 2em;
+    border: 2px solid skyblue;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: skyblue;
+    transition: all 300ms ease;
+    margin: 30px 0 0 0;
+}
+
+.news-wrap .quiz-wrap .quiztitle .quiz-button:hover {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.store-wrap {
+    background-image: url(../assets/storebg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    position: relative;
+}
+
+.storetitle {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    position: relative;
+    clear: both;
+    text-align: center;
+}
+
+.store-wrap .container .storetitle h1 {
+    padding-bottom: 70px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    color: #832b37;
+    font-style: normal;
+    line-height: 1.1em;
+    font-size: 5em;
+    text-transform: uppercase;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.store-wrap .container .storetitle p {
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    color: #832b37;
+    font-style: normal;
+    line-height: 1.1em;
+    font-size: 2em;
+    width: 100%;
+    display: block;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+
+.store-wrap .container .storetitle a {
+    line-height: 2em;
+    border: 2px solid skyblue;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.7em;
+    text-decoration: none;
+    color: skyblue;
+    transition: all 300ms ease;
+    margin: 30px 0 0 0;
     
+}
+
+.store-wrap .container .storetitle a:hover {
+    background-color: skyblue;
+    color: #fff;
+}
+
+.page-footer {
+    background-color: #832b37;
+}
+
+.page-footer .container .row .col.l12.s12 h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: skyblue;
+    font-size: 3em;
+}
+
+.page-footer .container .row .col.l12.s12 p {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.3em;
+}
+
+.fa {
+    padding: 10px;
+    color: skyblue;
+    transition: all 300ms ease;
+}
+
+.fa:hover {
+    opacity: 0.4;
+}
+
+.footer-copyright {
+    font-family: 'Inconsolata', monospace;
 }
