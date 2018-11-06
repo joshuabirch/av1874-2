@@ -547,3 +547,19 @@ nav.nav-center ul li a {
 .footer-copyright {
     font-family: 'Inconsolata', monospace;
 }
+
+
+/* MEDIA TAGS */
+@media all and (max-width: 375px){
+  .about-wrap {
+    background-size: auto;
+  }
+
+  .news-wrap {
+    background-size: auto;
+  }
+
+  .store-wrap {
+    background-size: auto;
+  }
+}
