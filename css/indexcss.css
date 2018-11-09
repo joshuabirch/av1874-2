@@ -10,9 +10,21 @@ html, body {
     transition: 1s;
 }
 
+
+.modal {
+    padding: 30px;
+    background-color: #832b37;
+    border-radius: 0;
+    box-shadow: 2px 3px skyblue!important;
+}
+
 .logintitle {
-    font-family: 'Satisfy', cursive;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
+    text-transform: uppercase;
+    color: skyblue;
+    border: 2px solid skyblue;
+    padding: 20px;
 }
 
 .modal-content {
@@ -20,29 +32,92 @@ html, body {
 }
 
 .loginbutton {
-    background-color: #832b37;
-    font-family: 'Inconsolata', monospace;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     margin: 20px;
+    border: 2px solid skyblue;
+    color: skyblue;
+    padding: 20px;
+    transition: all 500ms ease;
+    text-transform: uppercase;  
 }
 
 .loginbutton:hover {
-    background-color: #832b37;
+    background-color: skyblue;
+    color: #fff;
 }
 
 
 .registerbutton {
-    background-color: #2cb2ff;
-    font-family: 'Inconsolata', monospace;
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     margin: 20px;
+    border: 2px solid skyblue;
+    color: skyblue;
+    padding: 20px;
+    transition: all 500ms ease;
+    text-transform: uppercase;
 }
 
 .registerbutton:hover {
-    background-color: #2cb2ff;
+    background-color: skyblue;
+    color: #fff;
+}
+
+.forgot-password {
+    display: block;
+    padding: 20px;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    transition: all 500ms ease;
+}
+
+.forgot-password:hover {
+    opacity: 0.4;
 }
 
 
+/* label color */
+.input-field label {
+ color: skyblue!important;
+ font-family: 'Montserrat', sans-serif;
+ text-transform: uppercase;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+ color: skyblue!important;
+}
+
+.input-field input[type=password]:focus + label {
+ color: skyblue!important;
+}
+
+.input-field input[type=text] {
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+}
+
+.input-field input[type=password] {
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+ border-bottom: 1px solid skyblue!important;
+ box-shadow: 0 1px 0 0 skyblue!important;
+ color: #fff;
+} 
+
+.input-field input[type=password]:focus {
+ border-bottom: 1px solid skyblue!important;
+ box-shadow: 0 1px 0 0 skyblue!important;
+ color: #fff;
+} 
 
 
 nav {
